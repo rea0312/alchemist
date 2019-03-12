@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+<!-- appender 部分是可用的日志输出方式定义，可以定义多个 -->
+    <appender name="ConsoleLog"
+        class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="%d %-5p [%-8t] [%-17C{1}]  - %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="DailyRollingFile"
+        class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="../logs/${LP}/${LP}Alc.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="%d %-5p [%-8t] [%-17C{1}] - %m%n" />
+        </layout>
+    </appender>
+
+    <!--  root部分定义了log4j的默认输出级别和方式 -->
+ <root>
+        <priority value="info" />
+        <appender-ref ref="ConsoleLog" />
+        <appender-ref ref="DailyRollingFile" />
+    </root>
+
+</log4j:configuration>

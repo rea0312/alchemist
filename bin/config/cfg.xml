@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfgs>
+
+    <URLSAMPLE_UPLOAD_HOST>F:\\Data\\test</URLSAMPLE_UPLOAD_HOST>
+    
+    <PHONESAMPLE_UPLOAD_PATH>F:\Data\SampleShare\upphone</PHONESAMPLE_UPLOAD_PATH>
+    <PHONESAMPLE_DOWNLOAD_PATH>F:\Data\SampleShare\PHONE</PHONESAMPLE_DOWNLOAD_PATH>
+    
+    <URLSAMPLE_UPLOAD_PATH>F:\Data\SampleShare\upurl</URLSAMPLE_UPLOAD_PATH>
+    <URLSAMPLE_DOWNLOAD_PATH>F:\Data\SampleShare\URL</URLSAMPLE_DOWNLOAD_PATH>
+    
+    <APKSAMPLE_UPLOAD_PATH>F:\Data\SampleShare\upapk</APKSAMPLE_UPLOAD_PATH>
+    <APKSAMPLE_DOWNLOAD_PATH>F:\Data\SampleShare\APK</APKSAMPLE_DOWNLOAD_PATH>
+    
+    <APIKey>b1a082f31974fc4dd8fe3cfc11d976e4</APIKey>        
+    <APISecret>c5fbe30c259368685041b415dc9e4ad6</APISecret>
+    
+    <UPLOAD_URL>https://wlc-alchemist.alibaba.com/upload_sample</UPLOAD_URL>      <!--上传URL  -->
+    <DOWNLAD_URL>https://wlc-alchemist.alibaba.com/download_sample</DOWNLAD_URL>  <!--下载URL  -->
+    <SELECT_URL>https://wlc-alchemist.alibaba.com/select_hash</SELECT_URL>      <!--查询URL  -->
+    
+</cfgs>
+    
